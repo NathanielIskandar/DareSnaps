@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
+const React = require('react');
+const { useState, useEffect } = require('react');
+const ReactDOM = require('react-dom');
+
 
 function App() {
   const [image, setImage] = useState(null);

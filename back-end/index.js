@@ -3,6 +3,7 @@ const user = require("./routes/user");
 const InitiateMongoServer = require("./config/db");
 const User = require("./models/User");
 const shop = require("./routes/friends")
+const dares = require('./routes/dares');
 
 // Initiate Mongo Server
 InitiateMongoServer();
@@ -15,12 +16,6 @@ const PORT = process.env.PORT || 4000;
 // Middleware
 app.use(express.json());
 
-// app.get("/test", async (req, res) => {
-//   const email = "nathanielri22@gmail.com";
-//   await User.findOne({email});
-//   res.json({ message: "hey" });
-// });
-
 app.get("/", (req, res) => {
   res.json({ message: "API Working" });
 });
@@ -32,6 +27,7 @@ app.get("/", (req, res) => {
 //  */
 app.use("/user", user);
 app.use("/friends", shop);
+app.use('/dares', dares);
 
 app.listen(PORT, (req, res) => {
   console.log(`Server Started at PORT ${PORT}`);

@@ -12,6 +12,12 @@ const auth = require("../middleware/auth");
  * @description - add item to shopping list
  */
 
+//EXAMPLE CALL:
+//-------------
+//POST http://localhost:4000/friends/add-friend
+// {
+//   "friend":"nate"
+// }
 router.post("/add-friend", auth, async (req, res) => {
     const user = await User.findById(req.user.id);
     const friend = req.body.friend;
@@ -24,6 +30,13 @@ router.post("/add-friend", auth, async (req, res) => {
     }
 )
 
+
+//EXAMPLE CALL:
+//-------------
+//GET http://localhost:4000/friends/remove-friend
+// {
+//   "friend":"nate"
+// }
 router.get("/remove-friend", auth, async (req, res) => {
     try {
       const user = await User.findById(req.user.id);
