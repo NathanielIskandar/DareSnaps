@@ -5,9 +5,16 @@
     justify-content: center;
     height: 100vh;
   }
+  @font-face {
+    font-family: 'Aladin';
+    src: url('fonts/Aladin-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
   
   body {
     background-color: #161B24; /* add this line */
+    font-family: Aladin, sans-serif;
   }
   
   .header {
@@ -29,7 +36,7 @@
   p {
     color: #ffffff;
     margin-bottom: 40px;
-    font-size: larger;
+    font-size: 20px;
   }
   
   .rectangle {
