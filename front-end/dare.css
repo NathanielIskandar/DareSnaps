@@ -1,0 +1,53 @@
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  body {
+    background-color: #161B24; /* add this line */
+  }
+  
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px;
+    padding-left: 70px;
+  }
+  
+  
+
+  h1 {
+    font-size: 3rem;
+    color: #2C7CF2; /* add this line */
+    margin-bottom: 0px;
+  }
+
+  p {
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: larger;
+  }
+  
+  .rectangle {
+    border: 8px solid #2C7CF2; /* change this line */
+    width: 902px;
+    height: 437px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  
+  button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #2C7CF2; /* add this line */
+    color: white; /* add this line to make the button text white */
+    border: none; /* add this line to remove the default button border */
+  }
+  
