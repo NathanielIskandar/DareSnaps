@@ -27,7 +27,8 @@ const UserSchema = mongoose.Schema({
     type: Array,
     required: false,
     default: []
-  }
+  },
+  images: [String],
 });
 
 // export model user with UserSchema
